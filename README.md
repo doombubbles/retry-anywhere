@@ -5,6 +5,10 @@
 
 <h1 align="center">Retry Anywhere</h1>
 
-Makes the Retry Round button show up in all standard modes. 
+Makes the Retry Round button show up and be usable in all standard modes.
+
+Only works for Bosses when playing games using the Boss Rounds mod.
+
+(This is basically just a newer take on my other mod, [Auto Escape](https://github.com/doombubbles/auto-escape#readme))
 
 [![Requires BTD6 Mod Helper](https://raw.githubusercontent.com/gurrenm3/BTD-Mod-Helper/master/banner.png)](https://github.com/gurrenm3/BTD-Mod-Helper#readme)
