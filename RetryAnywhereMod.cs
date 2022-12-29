@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Reflection;
-using Assets.Scripts.Unity.UI_New.GameOver;
-using Assets.Scripts.Unity.UI_New.InGame;
-using Assets.Scripts.Utils;
+using Il2CppAssets.Scripts.Unity.UI_New.GameOver;
+using Il2CppAssets.Scripts.Unity.UI_New.InGame;
+using Il2CppAssets.Scripts.Utils;
 using MelonLoader;
 using BTD_Mod_Helper;
 using BTD_Mod_Helper.Api;
