@@ -2,8 +2,8 @@ namespace RetryAnywhere;
 
 public static class ModHelperData
 {
-    public const string WorksOnVersion = "34.3";
-    public const string Version = "1.0.1";
+    public const string WorksOnVersion = "35.0";
+    public const string Version = "1.0.2";
     public const string Name = "Retry Anywhere";
 
     public const string Description = "Makes the Retry Round button show up and be usable in all modes.\n" +

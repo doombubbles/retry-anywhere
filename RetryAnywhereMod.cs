@@ -20,7 +20,7 @@ public class RetryAnywhereMod : BloonsTD6Mod
     public static bool overrideIsCreationMode;
 
     [HarmonyPatch]
-    internal static class DefeatScreen_Open_MoveNext
+    internal static class OverrideCreationMode
     {
         private static IEnumerable<MethodBase> TargetMethods()
         {
@@ -59,9 +59,16 @@ public class RetryAnywhereMod : BloonsTD6Mod
         }
     }
 
-    [HarmonyPatch(typeof(InGame), nameof(InGame.GetCheckpointCost))]
-    internal static class InGame_GetCheckpointCost
+    [HarmonyPatch]
+    internal static class CheckpointCosts
     {
+        private static IEnumerable<MethodBase> TargetMethods()
+        {
+            yield return AccessTools.Method(typeof(InGame), nameof(InGame.GetCheckpointCost));
+            yield return AccessTools.Method(typeof(BossDefeatScreen), nameof(BossDefeatScreen.GetContinueMmCost));
+            yield return AccessTools.Method(typeof(BossDefeatScreen), nameof(BossDefeatScreen.GetRetryMmCost));
+        }
+        
         [HarmonyPostfix]
         private static void Postfix(ref KonFuze __result)
         {
